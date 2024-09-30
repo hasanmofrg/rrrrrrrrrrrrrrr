@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- css -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        /* جميع classes */
+        .good-lover {
+            color: gold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 15px;
+
+
+        }
+
+        .book-a {
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .book-a:hover,
+        .about-con a:hover,
+        .ggg {
+            background-color: gold;
+        }
+
+        .ggg {
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+
+        /* 2 */
+        .con,
+        .our,
+        .menu,
+        .photo6,
+        .container {
+
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .about-con img {}
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .title h2 {
+            font-size: 40px;
+        }
+
+        .title p {
+            font-size: 14px;
+            color: #9a9a9a;
+            font-weight: 600;
+        }
+
+        .about-con {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .about-con img {
+            width: 450px
+        }
+
+        .about-con p {
+            color: #9a9a9a;
+            font-weight: 600px;
+            line-height: 1.6;
+            font-weight: 600;
+
+        }
+
+
+        .about-con a {
+            border: 2px solid thistle;
+        }
+
+        .our {
+            margin-top: 100px;
+
+        }
+
+        .b {
+            color: #eef600;
+        }
+
+        /*  start 4 */
+        .menu2 {
+
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .menu-right {}
+
+        .menu-left {}
+
+        .h3p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+        }
+
+        .img33 img {
+            border-radius: 50%;
+            width: 115px;
+            height: 115px;
+            justify-content: space-between;
+        }
+
+        .ppp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .yyy h3 {
+            color: #f9ff47;
+            font-size: 20px;
+            background-color: black;
+        }
+
+        .img4 b {
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .img4 p {
+            color: #fff;
+        }
+
+
+        /*  end 4 */
+        /* start 5 */
+        #h4 {}
+
+        .img4 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 300px;
+            background: url("img/daytime_bg.jpeg") center center/ cover no-repeat;
+            height: 400px;
+        }
+
+        .xxx {
+            width: 100%;
+            height: 700px;
+
+
+        }
+
+
+
+
+        /* end 5 */
+        /* header start */
+        header {
+            height: 100vh;
+            background: url("img/home_bg.jpeg") center center/ cover no-repeat;
+            position: relative;
+        }
+
+
+        #navbar img {
+            width: 80px;
+            margin-left: 100px;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #navbar ul {
+            display: flex;
+            margin-right: 100px;
+        }
+
+        #navbar ul a {
+            padding: 20px 15px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        #navbar ul a:hover {
+            border-bottom: 2px solid orange;
+        }
+
+        #tow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 75%;
+
+        }
+
+        #tow h1 {
+            font-size: 40px;
+            color: #fff;
+        }
+
+        #tow p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+
+
+
+        header::before {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: 0;
+            opacity: 0.5;
+            background-color: rgb(0, 0, 0);
+            content: "";
+
+        }
+
+        header * {
+            z-index: 10;
+        }
+
+        /* header end */
+
+
+        /*   3 */
+        #back-img {
+
+            background: url("img/offer-background.jpg") center center/ cover no-repeat;
+        }
+
+        #h1p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #h1p h2 {
+            color: gold;
+        }
+
+        #img3 {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        #img3 p {
+            color: #fff;
+        }
+
+        #h1p p {
+            color: #fff;
+        }
+
+        /*  end 3 */
+        /*   5 start  */
+        #div-img4 {
+
+            height: 100px;
+            background-color: aqua;
+            margin-top: -100px;
+        }
+
+        #div-h4 {
+            height: 100px;
+
+
+        }
+
+        #h4 {
+
+            margin-top: 77px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+
+
+
+
+        .xxx h4 {
+            color: #881212;
+        }
+
+        #ggg {
+            color: rgb(77, 209, 149);
+            border: 3px solid blue;
+        }
+
+
+        /*   end 5 */
+        /* start 6 */
+        .back {
+            background: url("img/offer-background.jpg") center center/ cover no-repeat;
+        }
+
+        .h5b {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #fff;
+            height: 200px;
+            margin-top: 180px;
+
+        }
+
+        .hhh3 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+        .hhh3 img {
+            width: 300px;
+            height: 200px;
+        }
+
+        .bor {
+            border: 2px solid red;
+        }
+
+        /* end 6 */
+        /* start 7 */
+        h6 {
+            font-size: 30px;
+        }
+
+        .container {
+
+            display: flex;
+
+        }
+
+        #rrrr {
+
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #yyy {
+            width: 500px;
+        }
+
+        .gmail1 {
+            width: 500px;
+        }
+
+        /* end 7 */
+
+
+        /*  responsiveness */
+        /*   mediun +tablet  */
+    </style>
+
+    <!-- /end css -->
+    <!-- حجم الشاشة -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="hasan mofrg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food lover</title>
+    <!--  style link -->
+    <link rel="stylesheet" href=".css">
+    <!--  موقع -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <!-- 1 start -->
+    <header>
+        <div id="navbar">
+            <img src="img/logo.png" alt=" food lover logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="tow">
+            <h1>Welcome to <span class="good-lover"> food lover</span> Reataurant</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis minima dolore illum tempora
+                aspernatur.</p><br><br>
+            <a href="#" class=" btn book-a"> book a table</a>
+
+        </div>
+    </header>
+
+    <!-- 1 end -->
+    <main>
+        <!-- 2 start -->
+        <section>
+            <div class="con">
+                <div class="title">
+                    <h2> the food lover history</h2><br>
+                    <p>more than +25 years of experinance</p><br><br>
+                </div>
+                <div class="about-con">
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod sequi sunt sint odio
+                            exercitationem, explicabo illo minima minus non, voluptatum perferendis aspernatur? Officia
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod sequi sunt sint odio
+                            dolores quasi nulla reiciendis, ratione voluptatibus.</p> <br><a href="#"
+                            class="btn btn-secon">
+                            LEARN MORE</a>
+                    </div>
+                    <div>
+                        <img src="img/about_img.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- 2 end -->
+        <!-- 3 -->
+        <section>
+            <div id="back-img">
+                <div class="our">
+                    <div id="h1p">
+                        <h2> our spocial offerst</h2><br>
+                        <p>more than +25 years of experinance</p><br><br>
+                    </div>
+                    <div id="img3">
+                        <div class="img"> <img src="img/offer1.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in!</p><br><b
+                                class="b">18.00 </b>
+                            <b> <br><del> 55.00$</del></b>
+
+                        </div>
+                        <div class="img"> <img src="img/offer2.png" alt=""><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in!</p><br>
+                            <b class="b">18.00$</b> <b><br><del> 55.00$</del></b>
+
+                        </div>
+                        <div class="img"> <img src="img/offer3.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in!</p><br><b
+                                class="b">18.00$</b>
+                            <b><br><del> 55.00$</del></b>
+                            <b></b>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <!-- 3 -->
+        <!-- 4 -->
+        <section id="menu">
+            <div class="menu">
+                <div class="h3p">
+                    <h3> our special menu</h3><br>
+                    <p> otder toe and third for free</p>
+                    <br>
+                </div>
+                <div class="menu2">
+                    <div class="menu-left">
+                        <div>
+                            <div class="menu-smole"> <img src="img/food1.png" alt=" "></div>
+                            <h3> LASAL CHEESE <SPan class="text"> 23$</SPan></h3>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                praesentium
+                            </p>
+                        </div>
+                        <div>
+                            <div class="menu-smole"> <img src="img/food2.png" alt=" "></div>
+                            <h3> LASAL CHEESE <SPan class="text"> 26$</SPan></h3>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                praesentium
+                            </p>
+                        </div>
+                        <div>
+                            <div class="menu-smole"> <img src="img/food3.png" alt=" "></div>
+                            <h3> LASAL CHEESE <SPan class="text"> 20$</SPan></h3>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                praesentium
+                            </p>
+                        </div>
+                        <div>
+                            <div class="menu-smole"> <img src="img/food4.png" alt=" "></div>
+                            <h3> LASAL CHEESE <SPan class="text"> 50$</SPan></h3>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                praesentium
+                            </p>
+                        </div>
+                        <div>
+                            <div class="menu-smole"> <img src="img/food5.png" alt=" "></div>
+                            <h3> LASAL CHEESE <SPan class="text"> 10$</SPan></h3>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                praesentium
+                            </p>
+                        </div>
+                        <div>
+                            <div class="menu-smole"> <img src="img/food6.png" alt=" "></div>
+                            <h3> LASAL CHEESE <SPan class="text"> 23$</SPan></h3>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                praesentium
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="menu-right">
+                        <div class="ppp">
+                            <div class="img33"> <img src="img/food7.jpeg" alt=" "></div>
+                            <div class="yyy">
+                                <h3> LASAL CHEESE <SPan class="text"> 21$</SPan></h3>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                    praesentium
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="ppp">
+                            <div class="img33"> <img src="img/food7.jpeg" alt=" "></div>
+                            <div class="yyy">
+
+                                <h3> LASAL CHEESE <SPan class="text"> 29$</SPan></h3>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                    praesentium lo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ppp">
+                            <div class="img33"> <img src="img/food8.jpeg" alt=" "></div>
+                            <div class="yyy">
+                                <h3> LASAL CHEESE <SPan class="text"> 20$</SPan></h3>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                    praesentium
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ppp">
+                            <div class="img33"> <img src="img/food10.jpeg" alt=" "></div>
+                            <div class="yyy">
+                                <h3> LASAL CHEESE <SPan class="text"> 20$</SPan></h3>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                    praesentium
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ppp">
+                            <div class="img33"> <img src="img/food11.jpeg" alt=" "></div>
+                            <div class="yyy">
+                                <h3> LASAL CHEESE <SPan class="text"> 27$</SPan></h3>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                    praesentium
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ppp">
+                            <div class="img33"> <img src="img/food12.jpeg" alt=" "></div>
+                            <div class="yyy">
+                                <h3> LASAL CHEESE <SPan class="text"> 25$</SPan></h3>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quis numquam
+                                    praesentium
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  end 4 -->
+        <!-- start 5 -->
+        <section class="zzz">
+            <div class="menu">
+                <div class="xxx">
+                    <div id="h4">
+                        <div class=" btn ggg">
+                            <a href="#"> explore full menu</a>
+                        </div>
+                    </div>
+
+
+                    <div id="div-img4">
+                        <div class="img4">
+                            <div><img src="img/breckfastIcon.png" alt=""><br> <b> breakfact</b> <br>
+                                <p> sviuivihviv</p>
+                            </div>
+                            <div> <img src="img/lunchIcon.png" alt=""><br> <b>lunch</b>
+                                <p> sviuivihviv</p>
+                            </div>
+                            <div><img src="img/dinnerIcon.png" alt=""> <br><b>dinner</b>
+                                <p> sviuivihviv</p>
+                            </div>
+                            <div><img src="img/dessertIcon.png" alt=""><br> <b> dessert</b>
+                                <p> sviuivihviv</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end 5 -->
+        <!--  start 6 -->
+        <section id="gallery">
+            <div class="back">
+                <div class="h5b">
+                    <h5> <b> our food gallery</b></h5>
+                </div><br>
+                <div class="photo6">
+                    <div class="hhh3">
+                        <div class=" btn bor"> <img src="img/gallery1.jpeg" alt=""></div>
+                        <div class=" btn bor"> <img src="img/gallery2.jpeg" alt=""></div>
+                        <div class=" btn bor"> <img src="img/gallery3.jpeg" alt=""></div>
+                    </div><br>
+                    <div class="hhh3">
+                        <div class=" btn bor"> <img src="img/gallery4.jpeg" alt=""></div>
+                        <div class=" btn bor"> <img src="img/gallery5.jpeg" alt=""></div>
+                        <div class=" btn bor"> <img src="img/gallery6.jpeg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end 6 -->
+        <section id="contact">
+            <div class="container">
+                <div>
+                    <div id="rrrr">
+                        <div id="yyy">
+                            <h6>تفاصيل</h6>
+                            <p> <i class="fa-solid fa-location-dot"></i> باب الجامعة ,مستر , الزراعة </p>
+                            <p> <i class="fa-solid fa-phone"></i> الهاتف: 0954234112</p>
+                            <p> <i class="fa-solid fa-envelope"></i> hasan@foodlover.com></p>
+                            <div><br>
+                                <h6> اوقات الدوام</h6>
+                                <p> 1am to 11pm</p>
+                                <p> 1am to 11pm</p>
+                            </div>
+                            <div><br>
+                                <h6>تابعوناا </h6>
+                                <a href="#"> <i class="fa-brands fa-facebook"></i> فيس بوك</a><br>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i>انستغرام </a><br>
+                                <a href="#"> <i class="fa-brands fa-instagram"></i> تيك توك</a><br>
+                            </div>
+                        </div>
+                        <div class="gmail1">
+
+                            <form>
+                                your details
+                                <fieldset name="personalia" id="jjj">
+                                    Name: <input placeholder="entar your name here" type="text" class="mmm"><br>
+                                    Email: <input placeholder="entar your gmail here" type="text" class="mmm"><br>
+                                </fieldset>
+                                <fieldset>
+                                    <h2> your review </h2>
+                                    <label for="1212">How did you visit agin:</label>
+
+                                    <select name="cars" id="1212">
+                                        <option value="googel">googel</option>
+                                        <option value="facbook">facbook</option>
+                                        <option value="instagram">instagram</option>
+
+                                    </select>
+
+                                    <br> <br>
+                                    <b> how did you visit adin </b><br>
+                                    <input type="radio" id="maybe" name="fav_language" value="maybe">
+                                    <label for="maybe">MAYBE</label><br>
+                                    <input type="radio" id="no" name="fav_language" value="no">
+                                    <label for="on">NO</label><br>
+                                    <input type="radio" id="yes" name="fav_language" value="yes">
+                                    <label for="yes">YES</label>
+                                    <br><br>
+                                    <label placeholder=" text here" for="w3review">comments :</label>
+                                    <textarea id="w3review" name="w3review" rows="4
+                                                                        " cols="40">
+
+                                                            </textarea>
+                                    <br>
+
+                                    <input type="submit">
+
+                                </fieldset>
+
+
+                            </form>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
